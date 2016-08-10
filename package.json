@@ -1,0 +1,27 @@
+{
+  "name": "pup",
+  "version": "1.0.0",
+  "description": "my personal site",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ok"
+  },
+  "keywords": [
+    "node",
+    "is",
+    "awesome"
+  ],
+  "author": "aaron wong",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-beta4"
+  }
+}

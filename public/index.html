@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400">
+  <!-- <link rel="stylesheet" type="text/css" href="framework/css/main.css" /> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Aaron Wong's Portfolio</title>
+</head>
+<body>
+  <!-- Header section -->
+  <header class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="img-responsive title-logo img-sm-center" src="img/profile.png" alt="Logo" width="140" >
+      </div>
+      <div class="col-sm-8 text-right text-uppercase text-sm-center">
+        <h1 class="text-thin title-md title-sm">Aaron Wong</h1>
+        <h4>Software Engineer</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <section class="container">
+    <img class="img-responsive" src="img/annapurna.jpg" alt="A sweet photo of Annapurna">
+    <!-- project showcase -->
+    <div  class="row" id="proj-header">
+      <div class="col-md-12">
+        <h2 class="text-muted text-center text-thin">Featured Work</h2>
+      </div>
+    </div
+
+    <div class="row text-center text-uppercase">
+      <!-- The classes in this div (text-center, text-uppercase) dont work for some reason -->
+    </div>
+    <div class="row text-center text-uppercase">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <img class=" img-responsive center-block img-proj-sz" src="img/proj1.png" alt="Music Visualizer" data-toggle="modal" data-target="#proj1" />
+        <h3>Music Visualizer</h3>
+        <p><a href="https://github.com/zzwong/processing-music-viz" target="_blank">Link to code</a></p>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <img class=" img-responsive center-block img-proj-sz" src="img/prch.png" alt="Prch" data-toggle="modal" data-target="#proj2" height="202.5px"/>
+        <h3>Prch App</h3>
+        <p><a href="http://prchapp.com" target="_blank">Link to project</a></p>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <img class=" img-responsive center-block img-proj-sz" src="img/panjutsu.png" alt="Panjutsu" data-toggle="modal" data-target="#proj3"/>
+        <h3>Panjutsu</h3>
+        <p><a href="http://amon-neequaye.com/panjutsu">Link to project</a></p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Modal -->
+    <section id="project-modals">
+      <div class="modal fade" id="proj1" tabindex="-1" role="dialog" aria-labelledby="mus-viz" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="mus-viz">Music Visualizer via Processing</h4>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img class="img-responsive center-block" src="img/proj1.png" alt="Music visualizer">
+                    I built this music visualizer while learning to use Processing to create new media art. Processing is a tool that provides a great environment to make computational media such as images, animations, and interactions. I used the Minim audio library to detect beats in the song input in order to then create visualizations that correspond to the beats.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="proj2" tabindex="-1" role="dialog" aria-labelledby="prch" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="prch">Prch</h4>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img class=" center-block" src="img/prchmob.png" height="500px" alt="Prch mobile prototype">
+                    Prch is a cool new startup that aims to provide consumers with the information they need so that they can make more environmental and socially responsible purchasing decisions so that they can improve their quality of life. I interned at prch during my winter quarter in 2016 while attending UC San Diego. I developed the backend and javascript functionality as well as some of the frontend templates for the web application. It runs in a node environment and is currently hosted on Parse. The image above is a screenshot of the mobile prototype that is still in development.
+                  </div>
+                  <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="proj3" tabindex="-1" role="dialog" aria-labelledby="panjutsu" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="panjutsu">Panjutsu</h4>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img class="img-responsive center-block" src="img/flowchart.jpg" alt="Panjutsu flowchart demo">
+                    Panjutsu is a simple tool that helps UC San Diego students explore majors and career paths available to them. I worked with a team of 4 other UX designers and developers from ideation, sketching, storyboarding, prototyping to development as part of an information architecture and user experience course at UC San Diego. The main highlight of the tool was an intuitive and fun to use flowchart that showed the class path for a specific major. I designed and created the icons that shows which quarter a certain class is available. I also helped the team with scraping the information shown on the site as well as making improvements with the code. The whole process for creating this tool was recorded by my fellow teammember Amon which you can view <a href="http://amon-neequaye.com/panjutsu" target="_blank">here</a>. Our app was voted the most helpful product from a class of about 40 students.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+  </section>
+  <br>
+
+
+  <!-- About me section / Footer -->
+  <footer class="container">
+    <hr>
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <h2 class="text-sm-center text-md-left  text-thin">About Me</h2>
+        <p>
+          I am an aspiring Software Engineer studying Computer Science at the University of California, San Diego. I love building elegant products on the web that are intuitive and user friendly.
+        </p>
+      </div>
+      <div class="col-md-6 col-xs-12 text-sm-center text-md-right ">
+        <h2 class="text-thin">Contact</h2>
+        <p>
+          Email: <a href="mailto:azwong@ucsd.edu">azwong@ucsd.edu</a>
+          <br />Phone: (787) 234-8058
+        </p>
+      </div>
+    </div>
+    <br>
+    <br>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,79 @@
+body{
+  font-family: "Roboto", sans-serif ;
+  font-weight: 300;
+  background-color: rgb(253, 253, 253);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+  color: #2d3c49;
+}
+
+@media screen and (min-width:768px) {
+  .text-md-right{
+    text-align:right;
+  }
+  .text-md-left{
+    text-align:left;
+  }
+  .title-md{
+    font-size:60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* You can write CSS here to center the logo and title text on extra small devices */
+
+  .img-sm-center {
+    display: block;
+    margin: 0 auto;
+  }
+  .text-sm-center {
+    text-align:center !important;
+    h1 {
+      font-size: 24px;
+    }
+  }
+  .title-sm{
+    font-size: 40px;
+  }
+}
+
+/* Custom text styles*/
+.text-thin {
+  font-weight: 100;
+}
+.text-muted{
+  color:#bebfbf;
+}
+
+/* Header */
+.title-super{
+  font-size: 60px;
+}
+.title-logo{
+  margin-top:20px;
+}
+
+/* Makes img size the same for project showcase*/
+.img-proj-sz {
+    position: relative;
+    width:  350px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+/* Horizontal lines */
+hr{
+  border-color: #7d97ad !important;
+  background-color: #7d97ad;
+  height: 2px;
+}
+
