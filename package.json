@@ -4,11 +4,11 @@
   "description": "my personal site",
   "main": "app.js",
   "scripts": {
-    "test": "test"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": "ok"
+    "url": "https://github.com/zzwong/aaronzwong.me.git"
   },
   "keywords": [
     "node",
@@ -23,5 +23,9 @@
     "jade": "^1.11.0",
     "path": "^0.12.7",
     "pug": "^2.0.0-beta4"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "supertest": "^2.0.0"
   }
 }
