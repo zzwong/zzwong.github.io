@@ -1,7 +1,6 @@
-/** 
- * module dependencies
+/**
+ * Module dependencies
  */
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
@@ -32,7 +31,6 @@ app.use(express.static(path.join(__dirname, 'public'), {maxAge: 31557600000}));
 /**
  * Primary app routes
  */
-
 app.get('/', homeController.index);
 
 
@@ -40,8 +38,4 @@ app.get('/', homeController.index);
 app.listen(8080, ()=> {
 	console.log('express server listening on port 8080 ');
 });
-
-
 module.exports = app;
-
-
