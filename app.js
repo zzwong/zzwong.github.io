@@ -33,6 +33,7 @@ app.use(express.static(path.join(__dirname, 'public'), {maxAge: 31557600000}));
  */
 app.get('/', homeController.index);
 
+app.get('/resume', homeController.getResume);
 
 
 app.listen(8080, ()=> {
