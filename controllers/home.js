@@ -10,5 +10,9 @@ exports.index = (req, res) => {
 
 
 exports.getResume = (req, res) => {
-	res.redirect('https://www.dropbox.com/s/guqfuj63l7b6jcu/ResumeAug2016.pdf?dl=0');
+	res.redirect('https://www.dropbox.com/s/guqfuj63l7b6jcu/ResumeAug2016.pdf?raw=1');
 };
+
+exports.getPaper = (req, res) => {
+	res.redirect('https://www.dropbox.com/s/3xanobwufootzul/factura_wong-datamining.pdf?raw=1');
+}
