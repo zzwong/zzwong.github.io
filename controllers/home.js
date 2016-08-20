@@ -10,7 +10,7 @@ exports.index = (req, res) => {
 
 
 exports.getResume = (req, res) => {
-	res.redirect('https://www.dropbox.com/s/4tuiw5p72owu9du/AugResume.pdf?raw=1);
+	res.redirect('https://www.dropbox.com/s/4tuiw5p72owu9du/AugResume.pdf?raw=1');
 };
 
 exports.getPaper = (req, res) => {
