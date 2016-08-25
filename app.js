@@ -4,17 +4,41 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const dotenv = require('dotenv');
+const mongoose = require('mongoose');
+const passport = require('passport');
+
+
+/**
+ * Load environment keys and variables
+ */
+dotenv.load({ path: '.env' });
 
 /**
  * Controllers (route handlers).
  */
 const homeController = require('./controllers/home');
+const blogController = require('./controllers/blog');
 
+/**
+ * Passport configuration
+ */
+const passportConfig = require('./config/passport')
 
 /**
  * Create express server
  */
 const app = express();
+
+/**
+ * Connect to MongoDB.
+ */
+mongoose.connect(process.env.MONGODB_URI || process.env.MONGOLAB_URI);
+mongoose.connection.on('error', () => {
+  console.error('MongoDB Connection Error. Please make sure that MongoDB is running.');
+  process.exit(1);
+});
+
 
 /**
  * express configs
@@ -34,6 +58,19 @@ app.use(express.static(path.join(__dirname, 'public'), {maxAge: 31557600000}));
 app.get('/', homeController.index);
 app.get('/MLpaper', homeController.getPaper);
 app.get('/resume', homeController.getResume);
+
+
+/**
+ * Blog routes
+ */
+app.get('/blog', blogController.getBlog);
+app.post('/blog', blogController.postBlog);
+//app.post('/blog/admin', passportConfig.isAuthenticated, blogController.adminLogin);
+app.get('/blog/title', blogController.getBlogByTitle); // Use title because its better for SEO
+
+// Handle tags
+//app.get('/blog/tag/', blogController.getBlog);
+
 
 
 app.listen(8080, ()=> {

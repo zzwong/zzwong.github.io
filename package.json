@@ -18,11 +18,17 @@
   "author": "aaron wong",
   "license": "ISC",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
     "express": "^4.14.0",
     "jade": "^1.11.0",
+    "mongoose": "^4.5.10",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
     "path": "^0.12.7",
-    "pug": "^2.0.0-beta4"
+    "pug": "^2.0.0-beta4",
+    "request": "^2.74.0"
   },
   "devDependencies": {
     "mocha": "^3.0.2",
