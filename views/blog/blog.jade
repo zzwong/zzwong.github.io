@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  head
+    include blog/head.jade
+    
+  body
+    
+    section(class='blog-content')
+      article
+        h1(class='post-title') #{blog.title}
+        section(class='post-meta')
+        section(class='post-content')
+          each paragraph in blog.body
+            p paragraph

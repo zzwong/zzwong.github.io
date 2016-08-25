@@ -1,0 +1,26 @@
+//- Displays all blogs.
+doctype html
+html(lang="en")
+  head
+    include blog/head.jade
+    
+  body(id='page-top')
+  
+  //include blog/nav.jade
+  
+  section
+    div(class='container')
+      h1 Blogs
+      div(class='row')
+        div(class='col-md-12')   
+          if blogs.length > 0     
+            each blog in blogs
+              h2 #{blog.title}
+              
+          else 
+            h2 Add a blog post! 
+            
+        
+          
+        
+    

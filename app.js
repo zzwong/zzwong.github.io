@@ -74,6 +74,6 @@ app.get('/blog/title', blogController.getBlogByTitle); // Use title because its 
 
 
 app.listen(8080, ()=> {
-	console.log('express server listening on port 8080 ');
+  console.log('express server listening on port 8080 ');
 });
 module.exports = app;
