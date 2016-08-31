@@ -23,7 +23,7 @@ const homeController = require('./controllers/home');
 /**
  * Passport configuration
  */
-const passportConfig = require('./config/passport')
+//const passportConfig = require('./config/passport')
 
 /**
  * Create express server
