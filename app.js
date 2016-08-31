@@ -19,6 +19,7 @@ dotenv.load({ path: '.env' });
  */
 const homeController = require('./controllers/home');
 const blogController = require('./controllers/blog');
+const blogAdminController = require('./controllers/admin')
 
 /**
  * Passport configuration
@@ -71,7 +72,7 @@ app.get('/blog/title', blogController.getBlogByTitle); // Use title because its 
 // Handle tags
 //app.get('/blog/tag/', blogController.getBlog);
 
-
+app.get('/blog/admin/login', blogAdminController.getLogin);
 
 app.listen(8080, ()=> {
   console.log('express server listening on port 8080 ');
