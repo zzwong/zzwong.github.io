@@ -18,7 +18,7 @@ dotenv.load({ path: '.env' });
  * Controllers (route handlers).
  */
 const homeController = require('./controllers/home');
-const blogController = require('./controllers/blog');
+//const blogController = require('./controllers/blog');
 
 /**
  * Passport configuration
@@ -63,10 +63,10 @@ app.get('/resume', homeController.getResume);
 /**
  * Blog routes
  */
-app.get('/blog', blogController.getBlog);
-app.post('/blog', blogController.postBlog);
+//app.get('/blog', blogController.getBlog);
+//app.post('/blog', blogController.postBlog);
 //app.post('/blog/admin', passportConfig.isAuthenticated, blogController.adminLogin);
-app.get('/blog/title', blogController.getBlogByTitle); // Use title because its better for SEO
+//app.get('/blog/title', blogController.getBlogByTitle); // Use title because its better for SEO
 
 // Handle tags
 //app.get('/blog/tag/', blogController.getBlog);
