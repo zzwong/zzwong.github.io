@@ -68,6 +68,7 @@ h5{
     background-size:     cover;
     margin-top: 20px;
     margin-bottom:20px;
+    cursor: pointer;
 }
 
 /* Horizontal lines */
